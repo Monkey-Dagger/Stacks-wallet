@@ -2,19 +2,22 @@
 
 SwiftUI based iOS and watchOS app for querying blockchain data via the Covalent API. I made wallet app for listing token balances, NFTs and searching for transactions on a perticular wallet network and address.
 
-Currently the wallet supports:
+## Screenshots
 
 ![Stack-ios](https://raw.githubusercontent.com/shreyaspapi/Stacks-wallet/main/images/ios1.png)
 ![Stack-ios](https://raw.githubusercontent.com/shreyaspapi/Stacks-wallet/main/images/ios2.png)
 ![Stack-ios](https://raw.githubusercontent.com/shreyaspapi/Stacks-wallet/main/images/watchos.png)
-## Mainnets
+
+## Currently the wallet supports:
+
+### Mainnets
 - Ethereum	1
 - Polygon/Matic	137
 - Avalanche C-Chain	43114
 - Binance Smart Chain	56
 - Fantom Opera	250
 
-## Testnets
+### Testnets
 - Polygon/Matic Mumbai	80001
 - Fuji C-Chain	43113
 - Kovan	42
