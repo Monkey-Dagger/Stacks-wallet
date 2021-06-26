@@ -32,6 +32,8 @@ Remaining (watchOS):
 - Add navigation to transactions to show complete transaction details we get from covalent.
 - Selection of multiple addresses is not complete due to hackathon as this was my first time making a watchOS app using swiftUI.
 
-![Stack-Image]()
+![Stack-ios](https://raw.githubusercontent.com/shreyaspapi/Stacks-wallet/main/images/ios1.png)
+![Stack-ios](https://raw.githubusercontent.com/shreyaspapi/Stacks-wallet/main/images/ios2.png)
+![Stack-ios](https://raw.githubusercontent.com/shreyaspapi/Stacks-wallet/main/images/watchos.png)
 
 
