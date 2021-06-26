@@ -1,0 +1,1006 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCA38B1C2674737000E961E0 /* FamwaltApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B1B2674737000E961E0 /* FamwaltApp.swift */; };
+		BCA38B1E2674737000E961E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B1D2674737000E961E0 /* ContentView.swift */; };
+		BCA38B202674737200E961E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA38B1F2674737200E961E0 /* Assets.xcassets */; };
+		BCA38B232674737200E961E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA38B222674737200E961E0 /* Preview Assets.xcassets */; };
+		BCA38B2E2674795000E961E0 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = BCA38B2D2674795000E961E0 /* Realm */; };
+		BCA38B302674795000E961E0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BCA38B2F2674795000E961E0 /* RealmSwift */; };
+		BCA38B3226747B6100E961E0 /* WalletDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B3126747B6100E961E0 /* WalletDB.swift */; };
+		BCA38B3426747D9600E961E0 /* WalletStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B3326747D9600E961E0 /* WalletStore.swift */; };
+		BCA38B3826747EA800E961E0 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B3726747EA800E961E0 /* Wallet.swift */; };
+		BCA38B3C26748B1200E961E0 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B3B26748B1200E961E0 /* WalletView.swift */; };
+		BCA38B3E26748EF700E961E0 /* WalletListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B3D26748EF700E961E0 /* WalletListView.swift */; };
+		BCA38B402674955400E961E0 /* WalletRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B3F2674955400E961E0 /* WalletRow.swift */; };
+		BCA38B422674A31B00E961E0 /* WalletFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B412674A31B00E961E0 /* WalletFormView.swift */; };
+		BCA38B442674A3D600E961E0 /* WalletForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B432674A3D600E961E0 /* WalletForm.swift */; };
+		BCA38B462674A78000E961E0 /* WalletMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B452674A78000E961E0 /* WalletMock.swift */; };
+		BCA38B97267718C300E961E0 /* TokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B96267718C300E961E0 /* TokenView.swift */; };
+		BCA38B992677267500E961E0 /* ChainFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B982677267500E961E0 /* ChainFormView.swift */; };
+		BCA38B9D267727CD00E961E0 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B9C267727CD00E961E0 /* Chain.swift */; };
+		BCA38BA02677388F00E961E0 /* TokenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38B9F2677388F00E961E0 /* TokenViewModel.swift */; };
+		BCA38BA2267738E100E961E0 /* TokenBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38BA1267738E100E961E0 /* TokenBalance.swift */; };
+		BCA38BA5267739C700E961E0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BCA38BA4267739C700E961E0 /* Alamofire */; };
+		BCA38BA726773A2D00E961E0 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38BA626773A2D00E961E0 /* Globals.swift */; };
+		BCA38BA926773A9D00E961E0 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38BA826773A9D00E961E0 /* Currency.swift */; };
+		BCA38BAB2677408000E961E0 /* TokenListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38BAA2677408000E961E0 /* TokenListView.swift */; };
+		BCA38BAD267740E200E961E0 /* TokenRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38BAC267740E200E961E0 /* TokenRow.swift */; };
+		BCA38BB0267743A400E961E0 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BCA38BAF267743A400E961E0 /* SDWebImageSwiftUI */; };
+		BCA38BB32677763600E961E0 /* NftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38BB22677763600E961E0 /* NftView.swift */; };
+		BCA38BB52677777100E961E0 /* Nft.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38BB42677777100E961E0 /* Nft.swift */; };
+		BCA38BB72678897B00E961E0 /* NftViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38BB62678897B00E961E0 /* NftViewModel.swift */; };
+		BCA38BB92678972500E961E0 /* NftGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38BB82678972500E961E0 /* NftGridView.swift */; };
+		BCA38BBB267898BE00E961E0 /* NftItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38BBA267898BE00E961E0 /* NftItemView.swift */; };
+		BCA38BBD2678B74000E961E0 /* NftDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA38BBC2678B74000E961E0 /* NftDetailView.swift */; };
+		BCAB68612684756F00276850 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB68602684756F00276850 /* Settings.swift */; };
+		BCAB68662684758200276850 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB68652684758100276850 /* Tokens.swift */; };
+		BCAB686B268475E600276850 /* TokenBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB686A268475E600276850 /* TokenBalance.swift */; };
+		BCAB68702684760900276850 /* TokenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB686F2684760900276850 /* TokenViewModel.swift */; };
+		BCAB68762684776E00276850 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BCAB68752684776E00276850 /* Alamofire */; };
+		BCAB687B268477DE00276850 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB687A268477DE00276850 /* Globals.swift */; };
+		BCAB688026847A9D00276850 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BCAB687F26847A9D00276850 /* SDWebImageSwiftUI */; };
+		BCAB688526847BD900276850 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB688426847BD900276850 /* RemoteImage.swift */; };
+		BCAB68932684820300276850 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB68922684820300276850 /* Transaction.swift */; };
+		BCAB68982684826200276850 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB68972684826200276850 /* TransactionViewModel.swift */; };
+		BCAB689D2684828600276850 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB689C2684828600276850 /* TransactionView.swift */; };
+		BCAB68A22684855400276850 /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB68A12684855400276850 /* NetworkView.swift */; };
+		BCAB68A72684880500276850 /* AddressesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB68A62684880500276850 /* AddressesView.swift */; };
+		BCDBB6702683125600442663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCDBB66F2683125600442663 /* LaunchScreen.storyboard */; };
+		BCDBB67F2683171900442663 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBB67E2683171900442663 /* TransactionView.swift */; };
+		BCDBB6832683172E00442663 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBB6822683172E00442663 /* TransactionViewModel.swift */; };
+		BCDBB6862683174000442663 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBB6852683174000442663 /* Transaction.swift */; };
+		BCDBB68A26831B9700442663 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBB68926831B9700442663 /* TransactionListView.swift */; };
+		BCDBB69126831C6B00442663 /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBB69026831C6B00442663 /* TransactionDetailView.swift */; };
+		BCDBB6992683353E00442663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCDBB6982683353E00442663 /* Assets.xcassets */; };
+		BCDBB6A02683353F00442663 /* FamwaltWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCDBB69F2683353F00442663 /* FamwaltWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BCDBB6A52683353F00442663 /* FamwaltApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBB6A42683353F00442663 /* FamwaltApp.swift */; };
+		BCDBB6A72683353F00442663 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBB6A62683353F00442663 /* ContentView.swift */; };
+		BCDBB6A92683353F00442663 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBB6A82683353F00442663 /* NotificationController.swift */; };
+		BCDBB6AB2683353F00442663 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBB6AA2683353F00442663 /* NotificationView.swift */; };
+		BCDBB6AD2683353F00442663 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBB6AC2683353F00442663 /* ComplicationController.swift */; };
+		BCDBB6AF2683354600442663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCDBB6AE2683354600442663 /* Assets.xcassets */; };
+		BCDBB6B22683354600442663 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCDBB6B12683354600442663 /* Preview Assets.xcassets */; };
+		BCDBB6B72683354600442663 /* FamwaltWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BCDBB6962683353700442663 /* FamwaltWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCDBB6A12683353F00442663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA38B102674737000E961E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCDBB69E2683353F00442663;
+			remoteInfo = "FamwaltWatch Extension";
+		};
+		BCDBB6B52683354600442663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA38B102674737000E961E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCDBB6952683353700442663;
+			remoteInfo = FamwaltWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCA38B712674ABA100E961E0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BCDBB6B72683354600442663 /* FamwaltWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCDBB6BB2683354600442663 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BCDBB6A02683353F00442663 /* FamwaltWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BCA38B182674737000E961E0 /* Famwalt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Famwalt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA38B1B2674737000E961E0 /* FamwaltApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamwaltApp.swift; sourceTree = "<group>"; };
+		BCA38B1D2674737000E961E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BCA38B1F2674737200E961E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCA38B222674737200E961E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCA38B3126747B6100E961E0 /* WalletDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDB.swift; sourceTree = "<group>"; };
+		BCA38B3326747D9600E961E0 /* WalletStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletStore.swift; sourceTree = "<group>"; };
+		BCA38B3726747EA800E961E0 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		BCA38B3B26748B1200E961E0 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		BCA38B3D26748EF700E961E0 /* WalletListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletListView.swift; sourceTree = "<group>"; };
+		BCA38B3F2674955400E961E0 /* WalletRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRow.swift; sourceTree = "<group>"; };
+		BCA38B412674A31B00E961E0 /* WalletFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletFormView.swift; sourceTree = "<group>"; };
+		BCA38B432674A3D600E961E0 /* WalletForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletForm.swift; sourceTree = "<group>"; };
+		BCA38B452674A78000E961E0 /* WalletMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletMock.swift; sourceTree = "<group>"; };
+		BCA38B96267718C300E961E0 /* TokenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenView.swift; sourceTree = "<group>"; };
+		BCA38B982677267500E961E0 /* ChainFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainFormView.swift; sourceTree = "<group>"; };
+		BCA38B9C267727CD00E961E0 /* Chain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
+		BCA38B9E2677329400E961E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BCA38B9F2677388F00E961E0 /* TokenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenViewModel.swift; sourceTree = "<group>"; };
+		BCA38BA1267738E100E961E0 /* TokenBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenBalance.swift; sourceTree = "<group>"; };
+		BCA38BA626773A2D00E961E0 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		BCA38BA826773A9D00E961E0 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		BCA38BAA2677408000E961E0 /* TokenListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenListView.swift; sourceTree = "<group>"; };
+		BCA38BAC267740E200E961E0 /* TokenRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRow.swift; sourceTree = "<group>"; };
+		BCA38BB22677763600E961E0 /* NftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftView.swift; sourceTree = "<group>"; };
+		BCA38BB42677777100E961E0 /* Nft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nft.swift; sourceTree = "<group>"; };
+		BCA38BB62678897B00E961E0 /* NftViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftViewModel.swift; sourceTree = "<group>"; };
+		BCA38BB82678972500E961E0 /* NftGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftGridView.swift; sourceTree = "<group>"; };
+		BCA38BBA267898BE00E961E0 /* NftItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftItemView.swift; sourceTree = "<group>"; };
+		BCA38BBC2678B74000E961E0 /* NftDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NftDetailView.swift; sourceTree = "<group>"; };
+		BCAB68602684756F00276850 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		BCAB68652684758100276850 /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		BCAB686A268475E600276850 /* TokenBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenBalance.swift; sourceTree = "<group>"; };
+		BCAB686F2684760900276850 /* TokenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenViewModel.swift; sourceTree = "<group>"; };
+		BCAB687A268477DE00276850 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		BCAB688426847BD900276850 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		BCAB68922684820300276850 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		BCAB68972684826200276850 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		BCAB689C2684828600276850 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		BCAB68A12684855400276850 /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
+		BCAB68A62684880500276850 /* AddressesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesView.swift; sourceTree = "<group>"; };
+		BCDBB66F2683125600442663 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCDBB67E2683171900442663 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		BCDBB6822683172E00442663 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		BCDBB6852683174000442663 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		BCDBB68926831B9700442663 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		BCDBB69026831C6B00442663 /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
+		BCDBB6962683353700442663 /* FamwaltWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamwaltWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCDBB6982683353E00442663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCDBB69A2683353E00442663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCDBB69F2683353F00442663 /* FamwaltWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FamwaltWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCDBB6A42683353F00442663 /* FamwaltApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamwaltApp.swift; sourceTree = "<group>"; };
+		BCDBB6A62683353F00442663 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BCDBB6A82683353F00442663 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		BCDBB6AA2683353F00442663 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		BCDBB6AC2683353F00442663 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		BCDBB6AE2683354600442663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCDBB6B12683354600442663 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCDBB6B32683354600442663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCDBB6B42683354600442663 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCA38B152674737000E961E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA38BB0267743A400E961E0 /* SDWebImageSwiftUI in Frameworks */,
+				BCA38BA5267739C700E961E0 /* Alamofire in Frameworks */,
+				BCA38B302674795000E961E0 /* RealmSwift in Frameworks */,
+				BCA38B2E2674795000E961E0 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCDBB69C2683353F00442663 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAB688026847A9D00276850 /* SDWebImageSwiftUI in Frameworks */,
+				BCAB68762684776E00276850 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCA38B0F2674737000E961E0 = {
+			isa = PBXGroup;
+			children = (
+				BCA38B1A2674737000E961E0 /* Famwalt */,
+				BCDBB6972683353700442663 /* FamwaltWatch */,
+				BCDBB6A32683353F00442663 /* FamwaltWatch Extension */,
+				BCA38B192674737000E961E0 /* Products */,
+				BCAB68742684776E00276850 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCA38B192674737000E961E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCA38B182674737000E961E0 /* Famwalt.app */,
+				BCDBB6962683353700442663 /* FamwaltWatch.app */,
+				BCDBB69F2683353F00442663 /* FamwaltWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCA38B1A2674737000E961E0 /* Famwalt */ = {
+			isa = PBXGroup;
+			children = (
+				BCA38B9E2677329400E961E0 /* Info.plist */,
+				BCA38B2B2674779C00E961E0 /* Views */,
+				BCA38B2A2674779600E961E0 /* ViewModels */,
+				BCA38B292674778C00E961E0 /* Models */,
+				BCA38B1B2674737000E961E0 /* FamwaltApp.swift */,
+				BCA38B1F2674737200E961E0 /* Assets.xcassets */,
+				BCA38B212674737200E961E0 /* Preview Content */,
+				BCA38BA626773A2D00E961E0 /* Globals.swift */,
+				BCDBB66F2683125600442663 /* LaunchScreen.storyboard */,
+			);
+			path = Famwalt;
+			sourceTree = "<group>";
+		};
+		BCA38B212674737200E961E0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BCA38B222674737200E961E0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCA38B292674778C00E961E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCA38B452674A78000E961E0 /* WalletMock.swift */,
+				BCA38B3726747EA800E961E0 /* Wallet.swift */,
+				BCA38B3126747B6100E961E0 /* WalletDB.swift */,
+				BCA38B432674A3D600E961E0 /* WalletForm.swift */,
+				BCA38B9C267727CD00E961E0 /* Chain.swift */,
+				BCA38BA1267738E100E961E0 /* TokenBalance.swift */,
+				BCA38BA826773A9D00E961E0 /* Currency.swift */,
+				BCA38BB42677777100E961E0 /* Nft.swift */,
+				BCDBB6852683174000442663 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BCA38B2A2674779600E961E0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BCDBB6822683172E00442663 /* TransactionViewModel.swift */,
+				BCA38B3326747D9600E961E0 /* WalletStore.swift */,
+				BCA38B9F2677388F00E961E0 /* TokenViewModel.swift */,
+				BCA38BB62678897B00E961E0 /* NftViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BCA38B2B2674779C00E961E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCDBB67D2683170400442663 /* Transaction */,
+				BCA38BB12677508C00E961E0 /* Nft */,
+				BCA38B95267718AF00E961E0 /* Token */,
+				BCA38B942677189E00E961E0 /* Wallet */,
+				BCA38B1D2674737000E961E0 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCA38B942677189E00E961E0 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				BCA38B412674A31B00E961E0 /* WalletFormView.swift */,
+				BCA38B3B26748B1200E961E0 /* WalletView.swift */,
+				BCA38B3D26748EF700E961E0 /* WalletListView.swift */,
+				BCA38B3F2674955400E961E0 /* WalletRow.swift */,
+				BCA38B982677267500E961E0 /* ChainFormView.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		BCA38B95267718AF00E961E0 /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				BCA38B96267718C300E961E0 /* TokenView.swift */,
+				BCA38BAA2677408000E961E0 /* TokenListView.swift */,
+				BCA38BAC267740E200E961E0 /* TokenRow.swift */,
+			);
+			path = Token;
+			sourceTree = "<group>";
+		};
+		BCA38BB12677508C00E961E0 /* Nft */ = {
+			isa = PBXGroup;
+			children = (
+				BCA38BB22677763600E961E0 /* NftView.swift */,
+				BCA38BB82678972500E961E0 /* NftGridView.swift */,
+				BCA38BBA267898BE00E961E0 /* NftItemView.swift */,
+				BCA38BBC2678B74000E961E0 /* NftDetailView.swift */,
+			);
+			path = Nft;
+			sourceTree = "<group>";
+		};
+		BCAB68742684776E00276850 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCDBB67D2683170400442663 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				BCDBB67E2683171900442663 /* TransactionView.swift */,
+				BCDBB68926831B9700442663 /* TransactionListView.swift */,
+				BCDBB69026831C6B00442663 /* TransactionDetailView.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		BCDBB6972683353700442663 /* FamwaltWatch */ = {
+			isa = PBXGroup;
+			children = (
+				BCDBB6982683353E00442663 /* Assets.xcassets */,
+				BCDBB69A2683353E00442663 /* Info.plist */,
+			);
+			path = FamwaltWatch;
+			sourceTree = "<group>";
+		};
+		BCDBB6A32683353F00442663 /* FamwaltWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BCDBB6CD26833BF100442663 /* Model */,
+				BCDBB6CC26833BEB00442663 /* ViewModel */,
+				BCDBB6CB26833BE400442663 /* View */,
+				BCDBB6A42683353F00442663 /* FamwaltApp.swift */,
+				BCDBB6A62683353F00442663 /* ContentView.swift */,
+				BCDBB6A82683353F00442663 /* NotificationController.swift */,
+				BCDBB6AA2683353F00442663 /* NotificationView.swift */,
+				BCDBB6AC2683353F00442663 /* ComplicationController.swift */,
+				BCDBB6AE2683354600442663 /* Assets.xcassets */,
+				BCDBB6B32683354600442663 /* Info.plist */,
+				BCDBB6B42683354600442663 /* PushNotificationPayload.apns */,
+				BCDBB6B02683354600442663 /* Preview Content */,
+				BCAB687A268477DE00276850 /* Globals.swift */,
+			);
+			path = "FamwaltWatch Extension";
+			sourceTree = "<group>";
+		};
+		BCDBB6B02683354600442663 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BCDBB6B12683354600442663 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCDBB6CB26833BE400442663 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCAB68602684756F00276850 /* Settings.swift */,
+				BCAB68652684758100276850 /* Tokens.swift */,
+				BCAB688426847BD900276850 /* RemoteImage.swift */,
+				BCAB689C2684828600276850 /* TransactionView.swift */,
+				BCAB68A12684855400276850 /* NetworkView.swift */,
+				BCAB68A62684880500276850 /* AddressesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCDBB6CC26833BEB00442663 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BCAB686F2684760900276850 /* TokenViewModel.swift */,
+				BCAB68972684826200276850 /* TransactionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BCDBB6CD26833BF100442663 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCAB686A268475E600276850 /* TokenBalance.swift */,
+				BCAB68922684820300276850 /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCA38B172674737000E961E0 /* Famwalt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA38B262674737200E961E0 /* Build configuration list for PBXNativeTarget "Famwalt" */;
+			buildPhases = (
+				BCA38B142674737000E961E0 /* Sources */,
+				BCA38B152674737000E961E0 /* Frameworks */,
+				BCA38B162674737000E961E0 /* Resources */,
+				BCA38B712674ABA100E961E0 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCDBB6B62683354600442663 /* PBXTargetDependency */,
+			);
+			name = Famwalt;
+			packageProductDependencies = (
+				BCA38B2D2674795000E961E0 /* Realm */,
+				BCA38B2F2674795000E961E0 /* RealmSwift */,
+				BCA38BA4267739C700E961E0 /* Alamofire */,
+				BCA38BAF267743A400E961E0 /* SDWebImageSwiftUI */,
+			);
+			productName = Famwalt;
+			productReference = BCA38B182674737000E961E0 /* Famwalt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCDBB6952683353700442663 /* FamwaltWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCDBB6BC2683354600442663 /* Build configuration list for PBXNativeTarget "FamwaltWatch" */;
+			buildPhases = (
+				BCDBB6942683353700442663 /* Resources */,
+				BCDBB6BB2683354600442663 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCDBB6A22683353F00442663 /* PBXTargetDependency */,
+			);
+			name = FamwaltWatch;
+			productName = FamwaltWatch;
+			productReference = BCDBB6962683353700442663 /* FamwaltWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BCDBB69E2683353F00442663 /* FamwaltWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCDBB6B82683354600442663 /* Build configuration list for PBXNativeTarget "FamwaltWatch Extension" */;
+			buildPhases = (
+				BCDBB69B2683353F00442663 /* Sources */,
+				BCDBB69C2683353F00442663 /* Frameworks */,
+				BCDBB69D2683353F00442663 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FamwaltWatch Extension";
+			packageProductDependencies = (
+				BCAB68752684776E00276850 /* Alamofire */,
+				BCAB687F26847A9D00276850 /* SDWebImageSwiftUI */,
+			);
+			productName = "FamwaltWatch Extension";
+			productReference = BCDBB69F2683353F00442663 /* FamwaltWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCA38B102674737000E961E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					BCA38B172674737000E961E0 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					BCDBB6952683353700442663 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					BCDBB69E2683353F00442663 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = BCA38B132674737000E961E0 /* Build configuration list for PBXProject "Famwalt" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCA38B0F2674737000E961E0;
+			packageReferences = (
+				BCA38B2C2674795000E961E0 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				BCA38BA3267739C700E961E0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				BCA38BAE267743A400E961E0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = BCA38B192674737000E961E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCA38B172674737000E961E0 /* Famwalt */,
+				BCDBB6952683353700442663 /* FamwaltWatch */,
+				BCDBB69E2683353F00442663 /* FamwaltWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCA38B162674737000E961E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCDBB6702683125600442663 /* LaunchScreen.storyboard in Resources */,
+				BCA38B232674737200E961E0 /* Preview Assets.xcassets in Resources */,
+				BCA38B202674737200E961E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCDBB6942683353700442663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCDBB6992683353E00442663 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCDBB69D2683353F00442663 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCDBB6B22683354600442663 /* Preview Assets.xcassets in Resources */,
+				BCDBB6AF2683354600442663 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCA38B142674737000E961E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA38BA926773A9D00E961E0 /* Currency.swift in Sources */,
+				BCA38B3826747EA800E961E0 /* Wallet.swift in Sources */,
+				BCA38B992677267500E961E0 /* ChainFormView.swift in Sources */,
+				BCA38B3E26748EF700E961E0 /* WalletListView.swift in Sources */,
+				BCA38B97267718C300E961E0 /* TokenView.swift in Sources */,
+				BCA38BB92678972500E961E0 /* NftGridView.swift in Sources */,
+				BCDBB69126831C6B00442663 /* TransactionDetailView.swift in Sources */,
+				BCA38BB32677763600E961E0 /* NftView.swift in Sources */,
+				BCA38BA726773A2D00E961E0 /* Globals.swift in Sources */,
+				BCDBB67F2683171900442663 /* TransactionView.swift in Sources */,
+				BCA38BA2267738E100E961E0 /* TokenBalance.swift in Sources */,
+				BCA38B1E2674737000E961E0 /* ContentView.swift in Sources */,
+				BCA38B402674955400E961E0 /* WalletRow.swift in Sources */,
+				BCA38B442674A3D600E961E0 /* WalletForm.swift in Sources */,
+				BCA38BBD2678B74000E961E0 /* NftDetailView.swift in Sources */,
+				BCA38B1C2674737000E961E0 /* FamwaltApp.swift in Sources */,
+				BCA38B422674A31B00E961E0 /* WalletFormView.swift in Sources */,
+				BCA38BBB267898BE00E961E0 /* NftItemView.swift in Sources */,
+				BCDBB68A26831B9700442663 /* TransactionListView.swift in Sources */,
+				BCA38B3426747D9600E961E0 /* WalletStore.swift in Sources */,
+				BCA38BB52677777100E961E0 /* Nft.swift in Sources */,
+				BCA38BB72678897B00E961E0 /* NftViewModel.swift in Sources */,
+				BCA38B3226747B6100E961E0 /* WalletDB.swift in Sources */,
+				BCA38B9D267727CD00E961E0 /* Chain.swift in Sources */,
+				BCA38B462674A78000E961E0 /* WalletMock.swift in Sources */,
+				BCA38B3C26748B1200E961E0 /* WalletView.swift in Sources */,
+				BCA38BA02677388F00E961E0 /* TokenViewModel.swift in Sources */,
+				BCA38BAD267740E200E961E0 /* TokenRow.swift in Sources */,
+				BCDBB6862683174000442663 /* Transaction.swift in Sources */,
+				BCA38BAB2677408000E961E0 /* TokenListView.swift in Sources */,
+				BCDBB6832683172E00442663 /* TransactionViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCDBB69B2683353F00442663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAB68982684826200276850 /* TransactionViewModel.swift in Sources */,
+				BCAB68612684756F00276850 /* Settings.swift in Sources */,
+				BCDBB6A92683353F00442663 /* NotificationController.swift in Sources */,
+				BCAB68A22684855400276850 /* NetworkView.swift in Sources */,
+				BCAB68932684820300276850 /* Transaction.swift in Sources */,
+				BCAB68702684760900276850 /* TokenViewModel.swift in Sources */,
+				BCAB689D2684828600276850 /* TransactionView.swift in Sources */,
+				BCAB68A72684880500276850 /* AddressesView.swift in Sources */,
+				BCDBB6A72683353F00442663 /* ContentView.swift in Sources */,
+				BCAB688526847BD900276850 /* RemoteImage.swift in Sources */,
+				BCDBB6AD2683353F00442663 /* ComplicationController.swift in Sources */,
+				BCAB686B268475E600276850 /* TokenBalance.swift in Sources */,
+				BCDBB6A52683353F00442663 /* FamwaltApp.swift in Sources */,
+				BCDBB6AB2683353F00442663 /* NotificationView.swift in Sources */,
+				BCAB687B268477DE00276850 /* Globals.swift in Sources */,
+				BCAB68662684758200276850 /* Tokens.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCDBB6A22683353F00442663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCDBB69E2683353F00442663 /* FamwaltWatch Extension */;
+			targetProxy = BCDBB6A12683353F00442663 /* PBXContainerItemProxy */;
+		};
+		BCDBB6B62683354600442663 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCDBB6952683353700442663 /* FamwaltWatch */;
+			targetProxy = BCDBB6B52683354600442663 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BCA38B242674737200E961E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCA38B252674737200E961E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCA38B272674737200E961E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_ASSET_PATHS = "\"Famwalt/Preview Content\"";
+				DEVELOPMENT_TEAM = FYS9RNAGTV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Famwalt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Stack;
+				INFOPLIST_KEY_CFBundleExecutable = Famwalt;
+				INFOPLIST_KEY_CFBundleName = Famwalt;
+				INFOPLIST_KEY_CFBundleVersion = 2;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shreyas.stack123;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BCA38B282674737200E961E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_ASSET_PATHS = "\"Famwalt/Preview Content\"";
+				DEVELOPMENT_TEAM = FYS9RNAGTV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Famwalt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Stack;
+				INFOPLIST_KEY_CFBundleExecutable = Famwalt;
+				INFOPLIST_KEY_CFBundleName = Famwalt;
+				INFOPLIST_KEY_CFBundleVersion = 2;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shreyas.stack123;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BCDBB6B92683354600442663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_ASSET_PATHS = "\"FamwaltWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FYS9RNAGTV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FamwaltWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shreyas.stack123.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		BCDBB6BA2683354600442663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_ASSET_PATHS = "\"FamwaltWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FYS9RNAGTV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "FamwaltWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shreyas.stack123.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		BCDBB6BD2683354600442663 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = FYS9RNAGTV;
+				IBSC_MODULE = FamwaltWatch_Extension;
+				INFOPLIST_FILE = FamwaltWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shreyas.stack123.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		BCDBB6BE2683354600442663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = FYS9RNAGTV;
+				IBSC_MODULE = FamwaltWatch_Extension;
+				INFOPLIST_FILE = FamwaltWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shreyas.stack123.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCA38B132674737000E961E0 /* Build configuration list for PBXProject "Famwalt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA38B242674737200E961E0 /* Debug */,
+				BCA38B252674737200E961E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA38B262674737200E961E0 /* Build configuration list for PBXNativeTarget "Famwalt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA38B272674737200E961E0 /* Debug */,
+				BCA38B282674737200E961E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCDBB6B82683354600442663 /* Build configuration list for PBXNativeTarget "FamwaltWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCDBB6B92683354600442663 /* Debug */,
+				BCDBB6BA2683354600442663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCDBB6BC2683354600442663 /* Build configuration list for PBXNativeTarget "FamwaltWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCDBB6BD2683354600442663 /* Debug */,
+				BCDBB6BE2683354600442663 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BCA38B2C2674795000E961E0 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		BCA38BA3267739C700E961E0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		BCA38BAE267743A400E961E0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BCA38B2D2674795000E961E0 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCA38B2C2674795000E961E0 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		BCA38B2F2674795000E961E0 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCA38B2C2674795000E961E0 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		BCA38BA4267739C700E961E0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCA38BA3267739C700E961E0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		BCA38BAF267743A400E961E0 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCA38BAE267743A400E961E0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		BCAB68752684776E00276850 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCA38BA3267739C700E961E0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		BCAB687F26847A9D00276850 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCA38BAE267743A400E961E0 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BCA38B102674737000E961E0 /* Project object */;
+}
