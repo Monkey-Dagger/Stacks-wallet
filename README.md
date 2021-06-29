@@ -41,4 +41,4 @@ App architecture:
 
 Remaining (watchOS):
 - Add navigation to transactions to show complete transaction details we get from covalent.
-- Selection of multiple addresses is not complete due to hackathon as this was my first time making a watchOS app using swiftUI.
+- Selection of multiple addresses is not complete on watchOS due to hackathon as this was my first time making a watchOS app using swiftUI.
