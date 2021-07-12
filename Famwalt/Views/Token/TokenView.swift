@@ -16,12 +16,15 @@ struct TokenView: View {
     
     @State private var picker: Int = 0
     
+    
     var body: some View {
         NavigationView {
             ZStack {
+                Color(#colorLiteral(red: 0.04703966528, green: 0.1053452119, blue: 0.2279646695, alpha: 1))
+                    .ignoresSafeArea()
+                
                 if picker == 0 {
-                    TokenListView(tokens: tokenVM.tokens)
-                        .navigationBarTitle("Tokens")
+                    TokenListView(tokens: tokenVM.tokens, balance: tokenVM.totalBalance)
                 } else if picker == 1 {
                     NftView(nftVM: nftVM)
                 } else {
@@ -38,6 +41,7 @@ struct TokenView: View {
                     .pickerStyle(SegmentedPickerStyle())
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

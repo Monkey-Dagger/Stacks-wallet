@@ -15,7 +15,6 @@ struct WalletView: View {
     var body: some View {
         NavigationView {
             WalletListView(wallets: store.wallets)
-                .navigationBarTitle("Addresses")
                 .navigationBarItems(
                     leading: Button(action: toggleChainForm) {
                         ChainView(text: getChainText())
@@ -27,6 +26,7 @@ struct WalletView: View {
                     WalletFormView(form: WalletForm())
                         .environmentObject(self.store)
                 }
+                .navigationBarTitleDisplayMode(.inline)
         }
         .sheet(isPresented: $chainFormIsPresented) {
             ChainFormView()
