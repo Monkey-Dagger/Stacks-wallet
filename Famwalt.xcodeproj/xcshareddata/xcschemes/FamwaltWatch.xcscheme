@@ -54,8 +54,10 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BCDBB6952683353700442663"
@@ -63,7 +65,7 @@
             BlueprintName = "FamwaltWatch"
             ReferencedContainer = "container:Famwalt.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -71,8 +73,10 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BCDBB6952683353700442663"
@@ -80,7 +84,16 @@
             BlueprintName = "FamwaltWatch"
             ReferencedContainer = "container:Famwalt.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BCDBB6952683353700442663"
+            BuildableName = "FamwaltWatch.app"
+            BlueprintName = "FamwaltWatch"
+            ReferencedContainer = "container:Famwalt.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

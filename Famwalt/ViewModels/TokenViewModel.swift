@@ -41,8 +41,8 @@ class TokenViewModel: ObservableObject {
                             token.amount = item["quote"] as? Double ?? 0.0
                             token.balance = Double(item["balance"] as? String ?? "0")
                             token.balance! /= pow(10, Double(item["contract_decimals"] as? Int ?? 0))
-                            
-                            self.totalBalance += token.balance!
+                                                        
+                            self.totalBalance += token.amount!
                             
                             balances.append(token)
                         }
