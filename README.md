@@ -12,7 +12,7 @@ https://testflight.apple.com/join/C4Ffdyd0
 
 Tokens | NFT's | Addresses | Network selection | NFT Details 
 --- | --- | --- |--- |--- 
-![](https://github.com/shreyaspapi/Stack-wallet/blob/main/images/1.png) | ![](https://github.com/shreyaspapi/Stack-wallet-iOS/blob/main/images/2.png) | ![](https://github.com/shreyaspapi/Stack-wallet-iOS/blob/main/images/3.png) | ![](https://github.com/shreyaspapi/Stack-wallet-iOS/blob/main/images/4.png) | ![](https://github.com/shreyaspapi/Stack-wallet-iOS/blob/main/images/5.png)
+<img src="./images/1.png" width="200"> | <img src="./images/2.png" width="200"> | <img src="./images/3.png" width="200"> | <img src="./images/4.png" width="200"> | <img src="./images/5.png" width="200">
 
 ### watchOS
 ![Stack-ios](https://raw.githubusercontent.com/shreyaspapi/Stacks-wallet/main/images/watchos.png)
@@ -37,7 +37,7 @@ Tokens | NFT's | Addresses | Network selection | NFT Details
 
 ## Contribute
 If you want to contribute to this app, you're always welcome!
-See [Contributing Guidelines](https://github.com/shreyaspapi/Stack-wallet/blob/main/CONTRIBUTION.md). 
+See [Contributing Guidelines](https://github.com/shreyaspapi/Stacks-wallet/blob/main/CONTRIBUTION.md). 
 
 ## Built With 🛠
 - [SwiftUI](https://developer.apple.com/documentation/swiftui/) - SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift.
