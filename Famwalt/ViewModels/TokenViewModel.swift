@@ -11,6 +11,7 @@ import Alamofire
 
 class TokenViewModel: ObservableObject {
     @Published var tokens = [TokenBalance]()
+    @Published var totalBalance = 0.0
     
     init(chainID: String, address: String, currency: String) {
         getAddressBalance(chainID: chainID, address: address, currency: currency)
@@ -40,6 +41,9 @@ class TokenViewModel: ObservableObject {
                             token.amount = item["quote"] as? Double ?? 0.0
                             token.balance = Double(item["balance"] as? String ?? "0")
                             token.balance! /= pow(10, Double(item["contract_decimals"] as? Int ?? 0))
+                                                        
+                            self.totalBalance += token.amount!
+                            
                             balances.append(token)
                         }
                     }

@@ -18,6 +18,9 @@ enum WalletMock {
     static let avaMain = Chain(id: 43114, name: "Avalanche C-Chain Mainnet")
     static let fujiText = Chain(id: 43113, name: "Fuji C-Chain Testnet")
     static let fantom = Chain(id: 250, name: "Fantom Opera Mainnet")
+    static let rskMainnet = Chain(id: 30, name: "RSK Mainnet")
+    static let rskTest = Chain(id: 211, name: "RSK Testnet")
+
     
     static let allChains = [eth, polygon, bsc, avaMain, fujiText, fantom]
     
@@ -33,7 +36,6 @@ enum WalletMock {
                            Currency(systemName: "rublesign", name: "RUB", sign: "₽"),
                            Currency(systemName: "turkishlirasign", name: "TRY", sign: "₺"),
                            Currency(systemName: "e", name: "ETH", sign: "Ξ"),
-                           
     ]
 }
 

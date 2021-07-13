@@ -15,21 +15,27 @@ struct WalletFormView: View {
     
     var body: some View {
         NavigationView {
-            Form {
-                Section(header: Text("Name")) {
-                  TextField("test eth", text: $form.name)
+            ZStack {
+                Color(#colorLiteral(red: 0.04703966528, green: 0.1053452119, blue: 0.2279646695, alpha: 1))
+
+                Form {
+                    Section(header: Text("Name")) {
+                      TextField("test eth", text: $form.name)
+                    }
+                    Section(header: Text("address📝")) {
+                      TextField("demo.eth", text: $form.address)
+                    }
                 }
-                Section(header: Text("address📝")) {
-                  TextField("demo.eth", text: $form.address)
-                }
+                .foregroundColor(Color(#colorLiteral(red: 0.9581345916, green: 0.7898219228, blue: 0.7886767983, alpha: 1)))
+                .navigationBarTitle("Wallet Form", displayMode: .inline)
+                .navigationBarItems(
+                  leading: Button("Cancel", action: dismiss),
+                  trailing: Button(
+                    form.updating ? "Update" : "Save",
+                    action: form.updating ? updateWallet : saveWallet))
             }
-            .navigationBarTitle("Wallet Form", displayMode: .inline)
-            .navigationBarItems(
-              leading: Button("Cancel", action: dismiss),
-              trailing: Button(
-                form.updating ? "Update" : "Save",
-                action: form.updating ? updateWallet : saveWallet))
         }
+        
         
     }
 }

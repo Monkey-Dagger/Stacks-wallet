@@ -16,16 +16,19 @@ struct TokenRow: View {
         HStack {
             WebImage(url: URL(string: token.logo_url ?? ""))
                 .resizable()
-                .frame(width: 35, height: 35)
+                .frame(width: 40, height: 40)
                 .clipShape(Circle())
+                .padding(.leading, 5)
             
             VStack(alignment: .leading) {
                 Text(token.contract_ticker_symbol!)
                     .font(.title3)
+                    .foregroundColor(Color(#colorLiteral(red: 0.9581345916, green: 0.7898219228, blue: 0.7886767983, alpha: 1)))
                 Text(token.contract_name!)
                     .font(.subheadline)
+                    .foregroundColor(Color(#colorLiteral(red: 0.9581345916, green: 0.7898219228, blue: 0.7886767983, alpha: 1)))
             }
-            .padding(.leading, 5)
+            .padding(.leading, 7)
 
             Spacer()
             
@@ -38,6 +41,7 @@ struct TokenRow: View {
             .padding(.trailing)
         }
         .padding(.vertical)
+        .padding(.leading, 4)
     }
 }
 

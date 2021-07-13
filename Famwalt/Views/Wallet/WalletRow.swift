@@ -22,17 +22,21 @@ struct WalletRow: View {
                     .resizable()
                     .frame(width: 10, height: 10)
                     .foregroundColor(wallet.id == store.selection ? .green : .red)
-                    .padding(.trailing)
+                    .padding(.trailing, 8)
                     
                 
                 Button(action: showOption) {
                     VStack(alignment: .leading) {
                         Text(wallet.name)
-                            .font(.title)
+                            .font(.system(size: 20))
+                            .fontWeight(.bold)
+                            .foregroundColor(Color(#colorLiteral(red: 0.9581345916, green: 0.7898219228, blue: 0.7886767983, alpha: 1)))
 
                         Text(wallet.address)
-                            .font(.subheadline)
+                            .font(.system(size: 12))
+                            .fontWeight(.semibold)
                             .truncationMode(.middle)
+                            .foregroundColor(Color(#colorLiteral(red: 0.9581345916, green: 0.7898219228, blue: 0.7886767983, alpha: 1)))
 
                     }
                 }
