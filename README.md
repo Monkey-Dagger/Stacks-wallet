@@ -12,7 +12,7 @@ https://testflight.apple.com/join/C4Ffdyd0
 
 Tokens | NFT's | Addresses | Network selection | NFT Details 
 --- | --- | --- |--- |--- 
-![](https://github.com/shreyaspapi/Stacks-wallet/blob/main/images/1.png =250x) | ![](https://github.com/shreyaspapi/Stacks-wallet-iOS/blob/main/images/2.png) | ![](https://github.com/shreyaspapi/Stacks-wallet-iOS/blob/main/images/3.png) | ![](https://github.com/shreyaspapi/Stacks-wallet-iOS/blob/main/images/4.png) | ![](https://github.com/shreyaspapi/Stacks-wallet-iOS/blob/main/images/5.png)
+<img src="./images/1.png" width="200"> | ![](https://github.com/shreyaspapi/Stacks-wallet-iOS/blob/main/images/2.png) | ![](https://github.com/shreyaspapi/Stacks-wallet-iOS/blob/main/images/3.png) | ![](https://github.com/shreyaspapi/Stacks-wallet-iOS/blob/main/images/4.png) | ![](https://github.com/shreyaspapi/Stacks-wallet-iOS/blob/main/images/5.png)
 
 ### watchOS
 ![Stack-ios](https://raw.githubusercontent.com/shreyaspapi/Stacks-wallet/main/images/watchos.png)
