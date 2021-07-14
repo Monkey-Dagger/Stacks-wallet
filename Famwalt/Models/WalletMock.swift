@@ -22,7 +22,7 @@ enum WalletMock {
     static let rskTest = Chain(id: 211, name: "RSK Testnet")
 
     
-    static let allChains = [eth, polygon, bsc, avaMain, fujiText, fantom]
+    static let allChains = [eth, polygon, bsc, avaMain, fujiText, fantom, rskMainnet, rskTest]
     
     static let currency = [Currency(systemName: "dollarsign", name: "USD", sign: "$"),
                            Currency(systemName: "dollarsign", name: "CAD", sign: "$"),
