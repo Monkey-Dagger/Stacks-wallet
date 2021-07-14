@@ -61,6 +61,10 @@ extension WalletView {
             return "Fuji C-Chain Testnet"
         case 250:
             return "Fantom Opera Mainnet"
+        case 30:
+            return "Rsk Mainnet"
+        case 31:
+            return "Rsk Testnet"
         default:
             return "Ethereum"
         }
