@@ -63,7 +63,7 @@ extension WalletView {
             return "Fantom Opera Mainnet"
         case 30:
             return "Rsk Mainnet"
-        case 211:
+        case 31:
             return "Rsk Testnet"
         default:
             return "Ethereum"
